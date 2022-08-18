@@ -1,0 +1,218 @@
+*{
+     box-sizing: border-box;
+     padding:0 ;  
+    margin: 0;
+  
+}
+
+/* .nota{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+} */
+.titulo{
+    border: 5px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    margin: 10px;
+    width: 110px;
+    height: 30px;
+}
+/* .texto{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+     padding: 15px; 
+     margin: 10px; 
+    width: 380px;
+    height: 180px;
+    font-size: larger;
+    display: flex;    
+} */
+h3{
+    text-align: center;
+}
+
+.bordes{
+    border: 5px solid black;
+    padding: 15px;
+    margin: 10px;
+    height: 350px;
+    width: 300px;
+}
+.textoc{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.botones{
+    background-color: aliceblue;
+    padding: 5px;
+}
+.footer{
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    
+}
+.redes{
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* main{
+    background-color: pink;
+}  */
+
+.barra{
+    background-color: #ff0080;
+    width: 100%;
+    height: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    
+    
+}
+.logo{
+    
+    float: left;
+}
+.list{
+    font-size: 14px;
+    float: right;
+}
+.list li{
+    list-style: none;
+    display: inline-block;
+}
+.list a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 25px;
+}
+.list a:hover{
+    color: aliceblue;
+}
+
+body{
+    background-color: pink;
+} 
+.item{
+    height: 320px;
+    width: 320px;
+    background-color: orange;
+    border: 2px solid white;
+    font-size: 20px;
+    background-image: url(../multimedia/torta.jfif);
+    background-size: cover;
+}
+
+
+.sec{
+    height: 1000px;
+    width: 100%;
+    
+}
+.sec1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+#ttienda{
+    text-align: center;
+    font-size: 40px;
+}
+.sec2{
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 ,200px);
+    grid-gap: 20px;
+    padding: 20px;
+    
+    
+}
+
+.img{
+    
+    width: 100%;
+    background-color: black;
+    border: 2px solid white;
+    
+}
+.img:hover{
+    transform: scale(1.1);
+    transition: all 0,8s;
+}
+
+.img1{
+    background-image: url(../multimedia/tortanueva.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .img2{
+     background-image: url(../multimedia/torta2.jfif);
+     background-size: cover;
+     background-position: center;
+  }
+  .img3{
+     background-image: url(../multimedia/torta3.jfif);
+     background-size: cover;
+     background-position: center;
+  }
+  .img4{
+     background-image: url(../multimedia/torta2.jfif);
+     background-size: cover;
+     background-position: center;
+  }
+  .img5{
+     background-image: url(../multimedia/torta3.jfif);
+     background-size: cover;
+     background-position: center;
+  }
+  .img6{
+     background-image: url(../multimedia/tortanueva.jpg);
+     background-size: cover;
+     background-position: center;
+  }
+ @media only screen and (min-width:480px) {
+    .sec2{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6 ,200px);
+    }
+    
+ }
+ @media only screen and (min-width:600px) {
+    .sec2{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4 ,200px);
+    }
+    .img1{
+       grid-column: 1/3;
+       grid-row: 1/2;
+     }
+     .img2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+      }
+      .img3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .img4{
+        grid-column: 2/4;
+       grid-row: 2/3;
+      }
+      .img5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+      }
+      .img6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+      }
+    }
